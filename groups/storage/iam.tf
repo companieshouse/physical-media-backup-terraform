@@ -1,5 +1,5 @@
 resource "aws_iam_user" "data" {
-  name = "${var.service}-${var.environment}-data-user"
+  name = "${var.service}-${var.environment}"
 
   tags = merge(local.common_tags, {
     Name = "${var.service}-${var.environment}-data-user"
