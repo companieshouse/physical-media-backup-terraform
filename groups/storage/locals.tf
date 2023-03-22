@@ -1,7 +1,8 @@
 locals {
   common_tags = {
     Environment = var.environment
-    Service     = var.service
+    Provisioner = "Terraform"
     Repository  = var.repository
+    Service     = var.service
   }
 }
