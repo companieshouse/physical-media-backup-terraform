@@ -14,8 +14,8 @@ This project uses a trunk-based branching strategy and infrastructure changes ar
 
 ```mermaid
 %%{init: { 'logLevel': 'debug', 'theme': 'default' , 'themeVariables': {
-       'git0': '#4585ed',
-       'git1': '#edad45'
+    'git0': '#4585ed',
+    'git1': '#edad45'
 } } }%%
 gitGraph
 commit
