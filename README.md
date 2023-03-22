@@ -24,7 +24,7 @@ commit
 commit
 commit
 checkout main
-merge feature tag: "v1.0.0"
+merge feature tag: "1.0.0"
 ```
 ## License
 
