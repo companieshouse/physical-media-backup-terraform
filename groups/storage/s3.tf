@@ -3,11 +3,6 @@ resource "aws_s3_bucket" "data" {
   tags   = local.common_tags
 }
 
-resource "aws_s3_bucket_acl" "data" {
-  bucket = aws_s3_bucket.data.id
-  acl    = "private"
-}
-
 resource "aws_s3_bucket_versioning" "data" {
   bucket = aws_s3_bucket.data.id
   versioning_configuration {
