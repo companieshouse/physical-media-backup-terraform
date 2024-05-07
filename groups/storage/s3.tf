@@ -42,3 +42,11 @@ resource "aws_s3_bucket_ownership_controls" "data" {
     object_ownership = "BucketOwnerEnforced"
   }
 }
+
+module "s3_access_logging" {
+  source = "git@github.com:companieshouse/terraform-modules//aws/s3_access_logging?ref=1.0.264"
+
+  aws_account           = var.aws_account
+  aws_region            = var.region
+  source_s3_bucket_name = aws_s3_bucket.data.id
+}
